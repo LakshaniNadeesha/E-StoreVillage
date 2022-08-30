@@ -2,6 +2,7 @@ import React from "react";
 import "./Sidebar.css";
 import { FiHome, FiTag, FiUpload } from "react-icons/fi";
 import { VscSettingsGear, VscCalendar } from "react-icons/vsc";
+import {AiOutlineDislike} from "react-icons/ai";
 import {
     AiOutlineShoppingCart,
     AiOutlineUser,
@@ -113,30 +114,30 @@ const ManagerSidebar = () => {
             </span>
                     </div>
                 </Link>
-                <Link to="/discounts">
+                <Link to="/complaints">
                     <div className="row-container">
-                        <p
+                        <AiOutlineDislike
                             style={{
                                 color:
-                                    route.pathname.match(/discounts/) !== null
+                                    route.pathname.match(/complaints/) !== null
                                         ? iconSelectColor
                                         : iconDefaultColor,
 
                                 fontWeight:
-                                    route.pathname.match(/discounts/) !== null
+                                    route.pathname.match(/complaints/) !== null
                                         ? "bold"
                                         : "normal",
                                 fontSize: 25,
                             }}>
-                            %
-                        </p>
+
+                        </AiOutlineDislike>
                         <span
                             style={
                                 route.pathname.match(/discounts/) !== null
                                     ? selectTxtStyle
                                     : defaultTxtStyle
                             }>
-              Discounts
+              Complaints
             </span>
                     </div>
                 </Link>
