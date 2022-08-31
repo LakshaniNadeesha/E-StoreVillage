@@ -114,26 +114,20 @@ const ManagerSidebar = () => {
             </span>
                     </div>
                 </Link>
+
                 <Link to="/complaints">
                     <div className="row-container">
                         <AiOutlineDislike
-                            style={{
-                                color:
-                                    route.pathname.match(/complaints/) !== null
-                                        ? iconSelectColor
-                                        : iconDefaultColor,
-
-                                fontWeight:
-                                    route.pathname.match(/complaints/) !== null
-                                        ? "bold"
-                                        : "normal",
-                                fontSize: 25,
-                            }}>
-
-                        </AiOutlineDislike>
+                            size={25}
+                            color={
+                                route.pathname.match(/complaints/) !== null
+                                    ? iconSelectColor
+                                    : iconDefaultColor
+                            }
+                        />
                         <span
                             style={
-                                route.pathname.match(/discounts/) !== null
+                                route.pathname.match(/complaints/) !== null
                                     ? selectTxtStyle
                                     : defaultTxtStyle
                             }>
@@ -141,6 +135,7 @@ const ManagerSidebar = () => {
             </span>
                     </div>
                 </Link>
+
 
                 <Link to="/salesHistory">
                     <div className="row-container">

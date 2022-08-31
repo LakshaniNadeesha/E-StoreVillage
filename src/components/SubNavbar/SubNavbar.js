@@ -14,7 +14,9 @@ const SubNavbar = () => {
   const setHeader = () => {
     if(router.pathname.match(/manager_orders/)){
       return "Orders";
-    }else if (router.pathname.match(/order/)) {
+    }else if(router.pathname.match(/complaints/)){
+      return "Complaints";
+    } else if (router.pathname.match(/order/)) {
       return "My Orders";
     } else if (router.pathname === "/shop") {
       return "Shops";
