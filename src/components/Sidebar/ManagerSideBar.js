@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 import { FiHome, FiTag, FiUpload } from "react-icons/fi";
-import { VscSettingsGear, VscCalendar } from "react-icons/vsc";
+import { VscRequestChanges, VscCalendar } from "react-icons/vsc";
 import {AiOutlineDislike} from "react-icons/ai";
 import {
     AiOutlineShoppingCart,
@@ -136,27 +136,28 @@ const ManagerSidebar = () => {
                     </div>
                 </Link>
 
-
-                <Link to="/salesHistory">
+                <Link to="/promotion_request">
                     <div className="row-container">
-                        <BsPencilSquare
+                        <VscRequestChanges
                             size={25}
                             color={
-                                route.pathname.match(/salesHistory/) !== null
+                                route.pathname.match(/promotion_request/) !== null
                                     ? iconSelectColor
                                     : iconDefaultColor
                             }
                         />
                         <span
                             style={
-                                route.pathname.match(/salesHistory/) !== null
+                                route.pathname.match(/promotion_request/) !== null
                                     ? selectTxtStyle
                                     : defaultTxtStyle
                             }>
-              Sales History
+              Promotions
             </span>
                     </div>
                 </Link>
+
+
                 <Link to="/shopProfile">
                     <div className="row-container">
                         <AiOutlineUser

@@ -28,6 +28,7 @@ import ManagerSideBar from "./components/Sidebar/ManagerSideBar";
 import ManagerEvent from "./pages/ManagerPages/ManagerEvents/ManagerEvent";
 import ManagerOrder from "./pages/ManagerPages/ManagerOrders/ManagerOrder";
 import ManageComplaints from "./pages/ManagerPages/ManageComplaints/ManageComplaints";
+import PromotionRequest from "./pages/ManagerPages/PromotionRequest/PromotionRequest";
 
 function App() {
     // const isLogin = false;
@@ -94,6 +95,7 @@ function App() {
                     <Route path="/manager_events" element={<ManagerEvent/>} />
                     <Route path="/manager_orders" element={<ManagerOrder/>} />
                     <Route path="/complaints" element={<ManageComplaints/>}/>
+                    <Route path="/promotion_request" element={<PromotionRequest/>}/>
 
 
 
