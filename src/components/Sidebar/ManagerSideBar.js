@@ -158,23 +158,23 @@ const ManagerSidebar = () => {
                 </Link>
 
 
-                <Link to="/shopProfile">
+                <Link to="/managerProfile">
                     <div className="row-container">
                         <AiOutlineUser
                             size={25}
                             color={
-                                route.pathname.match(/shopProfile/) !== null
+                                route.pathname.match(/managerProfile/) !== null
                                     ? iconSelectColor
                                     : iconDefaultColor
                             }
                         />
                         <span
                             style={
-                                route.pathname.match(/shopProfile/) !== null
+                                route.pathname.match(/managerProfile/) !== null
                                     ? selectTxtStyle
                                     : defaultTxtStyle
                             }>
-              Shop Profile
+              Profile
             </span>
                     </div>
                 </Link>

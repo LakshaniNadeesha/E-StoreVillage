@@ -29,6 +29,8 @@ import ManagerEvent from "./pages/ManagerPages/ManagerEvents/ManagerEvent";
 import ManagerOrder from "./pages/ManagerPages/ManagerOrders/ManagerOrder";
 import ManageComplaints from "./pages/ManagerPages/ManageComplaints/ManageComplaints";
 import PromotionRequest from "./pages/ManagerPages/PromotionRequest/PromotionRequest";
+import ManagerProfile from "./pages/ManagerPages/ManagerProfile/ManagerProfile";
+import ManagerEditProfile from "./pages/ManagerPages/ManagerProfile/ManagerEditProfile";
 
 function App() {
     // const isLogin = false;
@@ -96,6 +98,8 @@ function App() {
                     <Route path="/manager_orders" element={<ManagerOrder/>} />
                     <Route path="/complaints" element={<ManageComplaints/>}/>
                     <Route path="/promotion_request" element={<PromotionRequest/>}/>
+                    <Route path="/managerProfile" element={<ManagerProfile/>}/>
+                    <Route path="/managerProfile/managereditprofile" element={<ManagerEditProfile/>}/>
 
 
 

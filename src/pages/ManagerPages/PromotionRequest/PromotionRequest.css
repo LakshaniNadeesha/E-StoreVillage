@@ -46,7 +46,7 @@
     justify-content: space-between;
 }
 .pro-request-detail-txt {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 15px;
     text-align: center;
 }
