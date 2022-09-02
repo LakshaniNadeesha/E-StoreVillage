@@ -2,9 +2,11 @@ import React from "react";
 import './PromotionRequest.css';
 import profile1 from "../../../assests/images/profile.png";
 import {FiSearch} from "react-icons/fi";
+import {useNavigate} from "react-router-dom";
 
 const PromotionRequest = () => {
     const promotion_requests = [{}, {}, {}, {}];
+    const navigate = useNavigate();
 
     return(
         <div className="pro-request-main-container">
@@ -112,9 +114,9 @@ const PromotionRequest = () => {
                                     padding: "2%",
                                 }}>
                                 <div className="pro-request-respond-option">
-                                    <button className="pro-accept">Accept</button>
+                                    <button className="pro-accept" onClick={() => navigate("/promotion_request/accept")}>Accept</button>
                                     <br/>
-                                    <button className="pro-reject">Reject</button>
+                                    <button className="pro-reject" onClick={() => navigate("/promotion_request/reject")}>Reject</button>
                                 </div>
                             </td>
                         </tr>
