@@ -4,6 +4,7 @@ import '../../CustomerPage/EventsPage/TopEvents/topevents.css'
 import '../../CustomerPage/EventsPage/eventpage.css'
 import {MdFileUpload} from "react-icons/md";
 import ManageTopEvent from "../../CustomerPage/EventsPage/TopEvents/ManageTopEvent";
+import {useNavigate} from "react-router-dom";
 
 const ManagerEvent = () => {
     const topevents = [{}, {},{}];

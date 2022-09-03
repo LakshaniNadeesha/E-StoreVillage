@@ -34,6 +34,8 @@ import ManagerEditProfile from "./pages/ManagerPages/ManagerProfile/ManagerEditP
 import PromotionRequestAccept from "./pages/ManagerPages/PromotionRequest/PromotionRequestAccept";
 import PromotionRequestReject from "./pages/ManagerPages/PromotionRequest/PromotionRequestReject";
 import ComplaintsRespond from "./pages/ManagerPages/ManageComplaints/ComplaintsRespond";
+import ManagerEventRemove from "./pages/ManagerPages/ManagerEvents/ManagerEventRemove";
+import ManagerEventEdit from "./pages/ManagerPages/ManagerEvents/ManagerEventEdit";
 
 function App() {
     // const isLogin = false;
@@ -98,6 +100,8 @@ function App() {
                     <Route exact path="/product" element={<CustomerPage/>} />
                     <Route path="/shop" element={<ShopPage />} />
                     <Route path="/manager_events" element={<ManagerEvent/>} />
+                    <Route path="/manager_events/edit_event" element={<ManagerEventEdit/>} />
+                    <Route path="/manager_events/remove_event" element={<ManagerEventRemove/>} />
                     <Route path="/manager_orders" element={<ManagerOrder/>} />
                     <Route path="/complaints" element={<ManageComplaints/>}/>
                     <Route path="/complaints/repond" element={<ComplaintsRespond/>}/>
