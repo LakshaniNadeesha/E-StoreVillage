@@ -36,7 +36,7 @@ const ManagerProductCard = () => {
                         />
                     }
                 />
-                <button className="yellow-btn" onClick={() => navigate("/myshop")}>
+                <button className="yellow-btn" onClick={() => navigate("/manager_products/visit_shop")}>
                     <AiOutlineShoppingCart size={20} />
                     Visit The Shop
                 </button>
