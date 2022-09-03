@@ -2,9 +2,11 @@ import React from "react";
 import './ManageComplaints.css';
 import profile1 from "../../../assests/images/profile.png";
 import {FiSearch} from "react-icons/fi";
+import {useNavigate} from "react-router-dom";
 
 const ManageComplaints = () => {
     const complaints = [{}, {}, {}, {}];
+    const navigate = useNavigate();
 
     return(
         <div className="complaints-main-container">
@@ -92,7 +94,7 @@ const ManageComplaints = () => {
                                     padding: "2%",
                                 }}>
                                 <div className="complaints-respond-option">
-                                    <button>Respond</button>
+                                    <button onClick={() => navigate("/complaints/repond")}>Respond</button>
                                 </div>
                             </td>
                         </tr>
