@@ -29,13 +29,13 @@ const ManagerSidebar = () => {
         <div>
             <section className="sidebar-container">
 
-                <Link to="/product">
+                <Link to="/manager_products">
                     <div className="row-container">
                         <div className="icon-container">
                             <FiHome
                                 size={25}
                                 color={
-                                    route.pathname === "/product"
+                                    route.pathname === "/manager_products"
                                         ? iconSelectColor
                                         : iconDefaultColor
                                 }
@@ -43,7 +43,7 @@ const ManagerSidebar = () => {
                         </div>
                         <span
                             style={
-                                route.pathname === "/product" ? selectTxtStyle : defaultTxtStyle
+                                route.pathname === "/manager_products" ? selectTxtStyle : defaultTxtStyle
                             }>
               Public
             </span>

@@ -7,9 +7,12 @@ import Rating from "react-rating";
 import { IoStarOutline, IoMdStar } from "react-icons/io5";
 import { GrStar } from "react-icons/gr";
 import { VscStarEmpty } from "react-icons/vsc";
+import {useNavigate} from "react-router-dom";
 
 const ShopCard = () => {
-  return (
+    const navigate = useNavigate();
+
+    return (
     <div className="cart-container">
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img src={Shop} className="shop-image-container" />
@@ -35,7 +38,7 @@ const ShopCard = () => {
             />
           }
         />
-        <button className="yellow-btn">
+        <button className="yellow-btn" onClick={() => navigate("/shop/visit_shop")}>
           <AiFillShop size={20} />
           Visit The Shop
         </button>
