@@ -24,11 +24,11 @@ const ProductCard = () => {
         <span className="grand-total">LKR 1250.00</span>
       </div>
       <div className="btn-row">
-        <button className="yellow-btn">
+        <button className="yellow-btn" onClick={() => navigate("/buy_now")}>
           <RiShoppingBagLine size={20} />
           Buy Now
         </button>
-        <button className="yellow-btn">
+        <button className="yellow-btn" onClick={() => navigate("/add_to_cart")}>
           <AiOutlineShoppingCart size={20} />
           Add To Cart
         </button>
@@ -48,7 +48,7 @@ const ProductCard = () => {
             />
           }
         />
-        <button className="yellow-btn" onClick={() => navigate("/visit_shop")}>
+        <button className="yellow-btn" onClick={() => navigate("/seller_products/visit_shop")}>
           <AiOutlineShoppingCart size={20} />
           Visit The Shop
         </button>
