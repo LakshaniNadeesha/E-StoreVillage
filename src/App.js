@@ -36,6 +36,13 @@ import PromotionRequestReject from "./pages/ManagerPages/PromotionRequest/Promot
 import ComplaintsRespond from "./pages/ManagerPages/ManageComplaints/ComplaintsRespond";
 import ManagerEventRemove from "./pages/ManagerPages/ManagerEvents/ManagerEventRemove";
 import ManagerEventEdit from "./pages/ManagerPages/ManagerEvents/ManagerEventEdit";
+import ManagerProducts from "./pages/ManagerPages/ManagerProducts/ManagerProduct";
+import VisitShopPage from "./pages/ShopPage/VisitShopPage";
+import BuyNow from "./components/ProductCard/BuyNow";
+import AddToCart from "./components/ProductCard/AddToCart";
+import AddProduct from "./pages/SellerPages/SellerProducts/AddProduct";
+import SellerBuyNow from "./pages/SellerPages/SellerProducts/SellerBuyNow";
+import SellerAddToCart from "./pages/SellerPages/SellerProducts/SellerAddToCart";
 
 function App() {
     // const isLogin = false;
@@ -66,7 +73,7 @@ function App() {
             {true === check() ? <Navbar /> : <SubNavbar />}
 
             <div style={false === check() ? styles : null}>
-                {false === check() && <ManagerSideBar/>}
+                {false === check() && <SellerSidebar/>}
 
                 <Routes>
                     {/* default pages */}
@@ -79,6 +86,8 @@ function App() {
 
                     {/* customer pages */}
                     <Route exact path="/product" element={<CustomerPage />} />
+                    <Route exact path="/buy_now" element={<BuyNow/>}/>
+                    <Route exact path="/add_to_cart" element={<AddToCart/>}/>
                     <Route path="/shop" element={<ShopPage />} />
                     <Route path="/event" element={<EventPage />} />
                     <Route path="/profile" element={<ProfilePage />} />
@@ -89,7 +98,11 @@ function App() {
 
                     {/* seller pages */}
                     <Route exact path="/myshop" element={<MyShop />} />
-                    <Route path="/seller_product" element={<SellerProducts/>}/>
+                    <Route exact path="/seller_product" element={<SellerProducts/>}/>
+                    <Route exact path="/seller_buy_now" element={<SellerBuyNow/>}/>
+                    <Route exact path="/seller_add_to_cart" element={<SellerAddToCart/>}/>
+                    <Route exact path="/add_new_product" element={<AddProduct/>}/>
+                    <Route exact path="/seller_products/visit_shop" element={<VisitShopPage/>} />
                     <Route path="/seller_orders" element={<SellerOrder/>}/>
                     <Route path="/seller_event" element={<SellerEventPage/>} />
                     <Route path="/discounts" element={<DiscountPage />} />
@@ -97,8 +110,10 @@ function App() {
                     <Route path="/shopProfile" element={<ShopProfile />} />
 
                     {/* Manager pages */}
-                    <Route exact path="/product" element={<CustomerPage/>} />
-                    <Route path="/shop" element={<ShopPage />} />
+                    <Route exact path="/manager_products" element={<ManagerProducts/>} />
+                    <Route exact path="/manager_products/visit_shop" element={<VisitShopPage/>} />
+                    <Route exact path="/shop" element={<ShopPage />} />
+                    <Route exact path="/shop/visit_shop" element={<VisitShopPage/>} />
                     <Route path="/manager_events" element={<ManagerEvent/>} />
                     <Route path="/manager_events/edit_event" element={<ManagerEventEdit/>} />
                     <Route path="/manager_events/remove_event" element={<ManagerEventRemove/>} />

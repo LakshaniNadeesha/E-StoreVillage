@@ -14,7 +14,13 @@ const SubNavbar = () => {
   const setHeader = () => {
     if(router.pathname.match(/manager_orders/)){
       return "Orders";
-    }else if(router.pathname.match(/visit_shop/)){
+    }else if(router.pathname.match(/add_to_cart/)){
+      return "Add To Cart";
+    } else if(router.pathname.match(/buy_now/)){
+      return "Buy Now";
+    }else if(router.pathname.match(/add_new_product/)){
+      return "Add New Product";
+    } else if(router.pathname.match(/visit_shop/)){
       return "Visit Shop";
     } else if(router.pathname.match(/complaints/)){
       return "Complaints";
