@@ -1,5 +1,4 @@
 import React from "react";
-import ProudctCard from "../../../components/ProductCard/ProductCard";
 import "./myshop.css";
 import Shop from "../../../assests/images/shop_02.png";
 import SocialMediaGroup from "../../../assests/images/socialmedia.png";
@@ -8,6 +7,7 @@ import { IoStarOutline, IoMdStar } from "react-icons/io5";
 import { GrStar } from "react-icons/gr";
 import ReviewCard from "../../../components/ReviewCard/ReviewCard";
 import SubNavbar from "../../../components/SubNavbar/SubNavbar";
+import ShopTopProducts from "../../ShopPage/ShopTopProducts";
 
 const MyShop = () => {
   const products = [{}, {}, {}, {}];
@@ -21,7 +21,7 @@ const MyShop = () => {
 
           <div className="top-product-container">
             {products.map((item, key) => (
-              <ProudctCard key={key} />
+              <ShopTopProducts key={key} />
             ))}
           </div>
           <button className="my-shop-see-all-btn">See All</button>

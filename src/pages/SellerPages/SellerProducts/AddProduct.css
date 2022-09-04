@@ -1,0 +1,12 @@
+.add-product-main-container{
+    padding: 2.5% 1%;
+    width: 100%;
+}
+
+.add-product-row-container{
+    width: 55%;
+    margin-left: 23%;
+    margin-top: 8%;
+    height: 280px;
+    border-radius: 32px;
+}

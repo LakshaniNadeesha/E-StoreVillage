@@ -15,7 +15,7 @@ const SellerOrder = () => {
                 <tr className="orders-table-header ">
                     <td
                         style={{
-                            width: "28%",
+                            width: "16.66%",
                             paddingLeft:"12%",
                             padding: "1.5% 2%",
                             textAlign: "left",
@@ -27,27 +27,27 @@ const SellerOrder = () => {
                     </td>
                     <td
                         className="order-table-header-txt"
-                        style={{ width: "16%", textAlign: "center" }}>
+                        style={{ width: "16.66%", textAlign: "center" }}>
                         Description
                     </td>
                     <td
                         className="order-table-header-txt"
-                        style={{ width: "10.8796%", textAlign: "center" }}>
+                        style={{ width: "16.66%", textAlign: "center" }}>
                         Quantity
                     </td>
                     <td
                         className="order-table-header-txt"
-                        style={{ width: "10.1204%", textAlign: "center" }}>
+                        style={{ width: "16.66%", textAlign: "center" }}>
                         Amount
                     </td>
                     <td
                         className="order-table-header-txt"
-                        style={{ width: "10%", textAlign: "center" }}>
+                        style={{ width: "16.66%", textAlign: "center" }}>
                         Status
                     </td>
                     <td
                         style={{
-                            width: "22%",
+                            width: "16.67%",
                             textAlign: "center",
                             borderBottomRightRadius: 31,
                             borderTopRightRadius: 31,
@@ -58,12 +58,12 @@ const SellerOrder = () => {
                 </tr>
                 <div style={{ height: 10 }}></div>
 
-                {orders.map((item, indxe) => (
+                {orders.map((item, index) => (
                     <>
                         <tr style={{ backgroundColor: "white" }}>
                             <td
                                 style={{
-                                    width: "28%",
+                                    width: "16.66%",
                                     borderTopLeftRadius: 20,
                                     borderBottomLeftRadius: 20,
                                     paddingLeft:"12%",
@@ -73,24 +73,24 @@ const SellerOrder = () => {
                                     <span className="order-detail-txt">56384</span>
                                 </div>
                             </td>
-                            <td style={{ width: "16%", padding: "2%" }}>
+                            <td style={{ width: "16.66%", padding: "2%" }}>
                                 <div className="order-item-column">
                                     <img src={Chain} className="order-item-size" />
                                     <p>Home made necklace</p>
                                 </div>
                             </td>
-                            <td style={{ width: "10.8796%", padding: "2%" }}>
+                            <td style={{ width: "16.66%", padding: "2%" }}>
                                 <h3 className="order-detail-txt dark-green">01</h3>
                             </td>
-                            <td style={{ width: "10.1204%", padding: "2%" }}>
+                            <td style={{ width: "16.66%", padding: "2%" }}>
                                 <h3 className="order-detail-txt dark-green">LKR 400.00</h3>
                             </td>
-                            <td style={{ width: "10%", padding: "2%" }}>
+                            <td style={{ width: "16.66%", padding: "2%" }}>
                                 <h3 className="order-detail-txt light-green">Delivered</h3>
                             </td>
                             <td
                                 style={{
-                                    width: "22%",
+                                    width: "16.67%",
                                     borderTopRightRadius: 20,
                                     borderBottomRightRadius: 20,
                                     padding: "2%",
