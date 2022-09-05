@@ -3,6 +3,7 @@
     padding: 2%;
     width: 100%;
 }
+
 .orders-table {
     border-spacing: 0;
 }
@@ -41,7 +42,7 @@
 }
 
 
-.order-item-column {
+.seller-order-item-column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,9 +54,10 @@
     object-fit: contain;
 }
 
-.order-item-column > p {
+.seller-order-item-column > p {
     font-size: 14px;
     margin-top: 7%;
+    text-align: center;
 }
 
 .order-detail-txt {
@@ -71,16 +73,54 @@
     color: #1a760b;
 }
 
-.order-shop-name-txt {
+.order-customer-name-txt {
     width: 80%;
     font-size: 18px;
-    padding: 2% 0;
-    margin-top: 8%;
+    padding: 1% 0;
+    margin-top: 4%;
 }
 
-.order-shop-name {
+.seller-order-customer-name {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.seller-order-respond-option{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seller-order-respond-option .order-edit{
+    background-color: #FBBC05;
+    border-radius: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: white;
+    font-size: 14px;
+}
+
+.seller-order-respond-option .order-remove{
+    background-color: #F4685D;
+    border-radius: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: white;
+    font-size: 14px;
+}
+
+.order-edit:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.order-remove:hover{
+    cursor: pointer;
+    font-weight: bold;
 }

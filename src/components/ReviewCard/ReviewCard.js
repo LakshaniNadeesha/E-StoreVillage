@@ -9,7 +9,7 @@ const ReviewCard = () => {
         <div style={{ width: "129px", height: "129px", objectFit: "contain" }}>
           <img src={Profile} alt="" className="review-profile-img" />
         </div>
-        <h3>Sanduni Fernando</h3>
+        <h4>Sanduni Fernando</h4>
       </div>
       <p
         style={{
