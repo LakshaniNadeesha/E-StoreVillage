@@ -43,6 +43,8 @@ import AddToCart from "./components/ProductCard/AddToCart";
 import AddProduct from "./pages/SellerPages/SellerProducts/AddProduct";
 import SellerBuyNow from "./pages/SellerPages/SellerProducts/SellerBuyNow";
 import SellerAddToCart from "./pages/SellerPages/SellerProducts/SellerAddToCart";
+import SellerOrderEdit from "./pages/SellerPages/SellerOrder/SellerOrderEdit";
+import SellerOrderRemove from "./pages/SellerPages/SellerOrder/SellerOrderRemove";
 
 function App() {
     // const isLogin = false;
@@ -102,8 +104,10 @@ function App() {
                     <Route exact path="/seller_buy_now" element={<SellerBuyNow/>}/>
                     <Route exact path="/seller_add_to_cart" element={<SellerAddToCart/>}/>
                     <Route exact path="/add_new_product" element={<AddProduct/>}/>
-                    <Route exact path="/seller_products/visit_shop" element={<VisitShopPage/>} />
+                    <Route exact path="/visit_shop" element={<VisitShopPage/>} />
                     <Route path="/seller_orders" element={<SellerOrder/>}/>
+                    <Route path="/seller_order/edit_order" element={<SellerOrderEdit/>}/>
+                    <Route path="/seller_order/remove_order" element={<SellerOrderRemove/>}/>
                     <Route path="/seller_event" element={<SellerEventPage/>} />
                     <Route path="/discounts" element={<DiscountPage />} />
                     <Route path="/salesHistory" element={<SalesHistory />} />

@@ -20,7 +20,7 @@ const SubNavbar = () => {
       return "Buy Now";
     }else if(router.pathname.match(/add_new_product/)){
       return "Add New Product";
-    } else if(router.pathname.match(/visit_shop/)){
+    }else if(router.pathname.match(/visit_shop/)){
       return "Visit Shop";
     } else if(router.pathname.match(/complaints/)){
       return "Complaints";
@@ -28,6 +28,10 @@ const SubNavbar = () => {
       return "Profile";
     } else if(router.pathname.match(/promotion_request/)){
       return "Promotion Requests";
+    } else if(router.pathname.match(/edit_order/)){
+      return "Edit Order Details";
+    } else if(router.pathname.match(/remove_order/)){
+      return "Remove Order";
     } else if (router.pathname.match(/order/)) {
       return "My Orders";
     } else if (router.pathname === "/shop") {
