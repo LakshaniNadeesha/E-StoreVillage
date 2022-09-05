@@ -48,7 +48,7 @@ const ProductCard = () => {
             />
           }
         />
-        <button className="yellow-btn" onClick={() => navigate("/seller_products/visit_shop")}>
+        <button className="yellow-btn" onClick={() => navigate("/visit_shop")}>
           <AiOutlineShoppingCart size={20} />
           Visit The Shop
         </button>
