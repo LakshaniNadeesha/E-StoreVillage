@@ -20,7 +20,13 @@ const SubNavbar = () => {
       return "Buy Now";
     }else if(router.pathname.match(/add_new_product/)){
       return "Add New Product";
-    }else if(router.pathname.match(/visit_shop/)){
+    }else if(router.pathname.match(/edit_giveaways/)){
+      return "Update Giveaway";
+    } else if(router.pathname.match(/add_giveaways/)){
+      return "Add A Giveaway";
+    }else if(router.pathname.match(/remove_giveaways/)){
+      return "Remove Giveaway";
+    } else if(router.pathname.match(/visit_shop/)){
       return "Visit Shop";
     } else if(router.pathname.match(/complaints/)){
       return "Complaints";
@@ -38,7 +44,7 @@ const SubNavbar = () => {
       return "Shops";
     } else if (router.pathname.match(/event/)) {
       return "Events";
-    } else if (router.pathname.match(/product/)) {
+    }else if (router.pathname.match(/product/)) {
       return "Products";
     } else if (router.pathname.match(/cart/)) {
       return "My Cart";
