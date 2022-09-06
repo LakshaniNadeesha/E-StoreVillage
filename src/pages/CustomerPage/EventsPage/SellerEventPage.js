@@ -5,8 +5,11 @@ import Giveaways from "./Giveaways/Giveaways";
 import TopEvents from "./TopEvents/TopEvents";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import SellerGiveaways from "./Giveaways/SellerGiveaways";
+import {AiOutlinePlus} from "react-icons/ai";
+import {useNavigate} from "react-router-dom";
 
 const SellerEventPage = () => {
+    const navigate = useNavigate();
     const giveawaylist = [{}, {}];
 
     const topevents = [{}, {}];
@@ -36,7 +39,10 @@ const SellerEventPage = () => {
             <div className="event-sub-container">
                 <div className="event-give-away-row-container">
                     <h3 className="event-title">Giveaways</h3>
-                    <button className="add-give-away-btn">Add A Giveaway</button>
+                    <div className="add-give-away-btn">
+                    <button onClick={() => navigate("/seller_event/add_giveaways")}><AiOutlinePlus size={22}/>
+                        Add A Giveaway</button>
+                    </div>
                 </div>
 
                 {giveawaylist.map((item, index) => (

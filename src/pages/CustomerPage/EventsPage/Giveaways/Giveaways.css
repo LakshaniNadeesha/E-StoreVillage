@@ -1,4 +1,4 @@
-.give-awary-row-container {
+.give-away-row-container {
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
   flex-direction: column;
 }
 
-.giveawary-update-row-container {
+.giveaway-update-row-container {
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -25,23 +25,27 @@
   margin-top: 5%;
 }
 
-.giveawary-update-row-container > div {
+.giveaway-update-row-container > div {
   flex-direction: row;
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.give-away-btns {
+.give-away-btn {
   padding: 10% 20%;
   border-radius: 20px;
   font-weight: bold;
+}
+
+.give-away-btn:hover{
+  cursor: pointer;
 }
 .give-away {
   width: 100%;
   margin-top: 14%;
 }
-.give-away-image-contianer {
+.give-away-image-container {
   width: 120px;
   height: 120px;
   object-fit: contain;
