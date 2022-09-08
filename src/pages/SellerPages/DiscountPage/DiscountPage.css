@@ -11,18 +11,24 @@
   margin-bottom: 6%;
 }
 
-.discount-header-row-container > h3 {
-  width: 85%;
-  text-align: center;
+.discount-title {
+  margin-top: 5%;
+
 }
-.create-discount-btn {
-  width: 13%;
-  background-color: #ffc029d4;
-  color: black;
+
+.create-discount-btn button{
+  background-color: #ffc029;
+  padding: 15px 11px;
   font-weight: bold;
-  padding: 1% 0;
   font-size: 15px;
+  gap: 6px;
+  flex-direction: row;
+  display: flex;
 }
+.create-discount-btn button:hover{
+  cursor: pointer;
+}
+
 .discount-main-row {
   display: flex;
   flex-direction: row;
@@ -40,8 +46,11 @@
   align-items: center;
   gap: 40px;
 }
-.discount-sub-row > div > h3 {
+
+
+.discount-sub-row > div > .dis-name {
   font-size: 18px;
+  font-weight: bold;
 }
 .discount-sub-row > div > p {
   font-size: 14px;
@@ -53,4 +62,37 @@
   border-radius: 5px;
   color: #6864c1;
   font-weight: bold;
+}
+.discount-buttons{
+  width: 20%;
+}
+.discount-update{
+  background-color: #FBBC05;
+  border-radius: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: white;
+  font-size: 14px;
+}
+
+.discount-update:hover{
+  cursor: pointer;
+}
+
+.discount-remove{
+  background-color: #F4685D;
+  border-radius: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: white;
+  font-size: 14px;
+  margin-left: 10%;
+}
+
+.discount-remove:hover{
+  cursor: pointer;
 }

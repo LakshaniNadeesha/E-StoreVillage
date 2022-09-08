@@ -14,11 +14,11 @@ const AddGiveaways = () => {
                         <div className="add-giveaway-full">
                             <div className="add-giveaway-left">
                                 <label>Product Name</label>
-                                <input type="text" className="add-giveaway-input-text" placeholder="Handmade Necklace"/>
+                                <input type="text" className="add-giveaway-input-text" placeholder="Handmade Necklace" required/>
                             </div>
                             <div className="add-giveaway-right">
                                 <label>Shop Name</label>
-                                <input type="text" className="add-giveaway-input-text" placeholder="Glamour House"/>
+                                <input type="text" className="add-giveaway-input-text" placeholder="Glamour House" required/>
                             </div>
 
                         </div>
@@ -26,11 +26,11 @@ const AddGiveaways = () => {
                         <div className="add-giveaway-full">
                             <div className="add-giveaway-left">
                                 <label>Start Date</label>
-                                <input type="date" className="add-giveaway-input-text1"/>
+                                <input type="date" className="add-giveaway-input-text1" required/>
                             </div>
                             <div className="add-giveaway-right">
                                 <label>End Date</label>
-                                <input type="date" className="add-giveaway-input-text1"/>
+                                <input type="date" className="add-giveaway-input-text1" required/>
                             </div>
 
                         </div>
@@ -38,7 +38,7 @@ const AddGiveaways = () => {
                         <div className="add-giveaway-full">
                             <div className="add-giveaway-left">
                                 <label>Description</label>
-                                <input type="text" className="add-giveaway-input-text2" placeholder="Delivered"/>
+                                <input type="text" className="add-giveaway-input-text2" placeholder="Delivered" required/>
                             </div>
 
                         </div>
