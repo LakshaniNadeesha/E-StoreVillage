@@ -4,8 +4,11 @@ import Shop from "../../../assests/images/shop_02.png";
 import Rating from "react-rating";
 import { IoStarOutline, IoMdStar } from "react-icons/io5";
 import { GrStar } from "react-icons/gr";
+import {useNavigate} from "react-router-dom";
 
 const ShopProfile = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="shop-profile-main-container">
       <div className="shop-profile-sub-container">
@@ -51,7 +54,8 @@ const ShopProfile = () => {
             </p>
 
             <div className="myshop-edit-btn">
-              <button style={{ bottom: "21%" }} className="profile-edit-btn">
+              <button style={{ bottom: "21%" }} className="shop-profile-edit-btn"
+                      onClick={() => navigate("/shopProfile/edit_shopProfile")}>
                 Edit Profile
               </button>
             </div>

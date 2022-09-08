@@ -21,7 +21,7 @@ const ManagerProfile = () => {
                     <span className="profile-detail-txt">
             E-mail - dilshanfernando@gmail.com
           </span>
-                    <span className="profile-detail-txt">Adddress - No 04, Park Road, Colombo</span>
+                    <span className="profile-detail-txt">Address - No 04, Park Road, Colombo</span>
                     <span className="profile-detail-txt">Contact No - 076-2563142</span>
                     <div className="profile-manager-edit-button">
                     <button onClick={() => navigate("/managerProfile/managereditprofile")}>
