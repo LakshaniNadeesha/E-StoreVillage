@@ -48,6 +48,9 @@ import SellerOrderRemove from "./pages/SellerPages/SellerOrder/SellerOrderRemove
 import AddGiveaways from "./pages/SellerPages/SellerEvent/AddGiveaways";
 import EditGiveaways from "./pages/SellerPages/SellerEvent/EditGiveaways";
 import RemoveGiveaways from "./pages/SellerPages/SellerEvent/RemoveGiveaways";
+import CreateDiscount from "./pages/SellerPages/DiscountPage/CreateDiscount";
+import UpdateDiscount from "./pages/SellerPages/DiscountPage/UpdateDiscount";
+import RemoveDiscount from "./pages/SellerPages/DiscountPage/RemoveDiscount";
 
 function App() {
     // const isLogin = false;
@@ -116,6 +119,9 @@ function App() {
                     <Route path="/seller_event/edit_giveaways" element={<EditGiveaways/>}/>
                     <Route path="/seller_event/remove_giveaways" element={<RemoveGiveaways/>}/>
                     <Route path="/discounts" element={<DiscountPage />} />
+                    <Route path="/discounts/create_discount" element={<CreateDiscount/>}/>
+                    <Route path="/discounts/update_discount" element={<UpdateDiscount/>}/>
+                    <Route path="/discounts/remove_discount" element={<RemoveDiscount/>}/>
                     <Route path="/salesHistory" element={<SalesHistory />} />
                     <Route path="/shopProfile" element={<ShopProfile />} />
 

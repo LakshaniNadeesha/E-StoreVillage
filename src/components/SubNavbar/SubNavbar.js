@@ -28,6 +28,12 @@ const SubNavbar = () => {
       return "Remove Giveaway";
     } else if(router.pathname.match(/visit_shop/)){
       return "Visit Shop";
+    } else if(router.pathname.match(/create_discount/)){
+      return "Create Discount";
+    }else if(router.pathname.match(/update_discount/)){
+      return "Update Discount";
+    }else if(router.pathname.match(/remove_discount/)){
+      return "Remove Discount";
     } else if(router.pathname.match(/complaints/)){
       return "Complaints";
     } else if (router.pathname.match(/managerProfile/)){
