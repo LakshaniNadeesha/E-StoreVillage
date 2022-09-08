@@ -3,6 +3,7 @@ import "./SalesHistory.css";
 import TopProducts from "./TopProducts/TopProducts";
 import TotalCounts from "./TotalCounts/TotalCounts";
 import BarChart from "react-bar-chart";
+
 const SalesHistory = () => {
   const topProduct = [{}, {}, {}];
 
@@ -20,13 +21,15 @@ const SalesHistory = () => {
     { text: "Nov", value: 400 },
     { text: "Dec", value: 350 },
   ];
-  const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+  const margin = { top: 20, right: 20, bottom: 30, left: 70 };
   return (
     <div className="sales-history-main-container">
       <div className="chart-container">
         <BarChart
-          ylabel=""
-          width={1100}
+
+          ylabel="No of Sales"
+          xlabel="Months"
+          width={1050}
           height={500}
           margin={margin}
           data={REVENUE}
@@ -48,7 +51,7 @@ const SalesHistory = () => {
       <div className="sales-history-stat-container">
         <h3 style={{ marginBottom: "8%" }}>Information about store visits</h3>
 
-        <div className="slaes-history-progress-container">
+        <div className="sales-history-progress-container">
           <h3>Handmade Necklace</h3>
           <div>
             <div
@@ -60,8 +63,8 @@ const SalesHistory = () => {
           <h3 style={{ textAlign: "right", marginTop: "2%" }}>63%</h3>
         </div>
 
-        <div className="slaes-history-progress-container">
-          <h3>Handmade Earings </h3>
+        <div className="sales-history-progress-container">
+          <h3>Handmade Earrings </h3>
           <div>
             <div
               style={{
@@ -72,7 +75,7 @@ const SalesHistory = () => {
           <h3 style={{ textAlign: "right", marginTop: "2%" }}>38%</h3>
         </div>
 
-        <div className="slaes-history-progress-container">
+        <div className="sales-history-progress-container">
           <h3>Handmade Necklace</h3>
           <div>
             <div

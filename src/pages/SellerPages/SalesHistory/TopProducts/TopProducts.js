@@ -7,24 +7,24 @@ const TopProducts = () => {
       <div className="sales-history-top-products-sub-row">
         <img src={Chain} alt="" />
         <article>
-          <h3 style={{ color: "#7B7878" }}>Handmade Bracelet </h3>
+          <p style={{ color: "#36393d",fontWeight:"bold" }}>Handmade Necklace </p>
           <p style={{ color: "#7B7878", marginTop: 5 }}>52 orders</p>
         </article>
       </div>
       <div className="sales-history-top-products-column">
-        <h3>Inventory</h3>
+        <p className="top-product-cart-title">Inventory</p>
         <h5>200</h5>
       </div>
       <div className="sales-history-top-products-column">
-        <h3>Sale</h3>
+        <p className="top-product-cart-title">Sale</p>
         <h5>200</h5>
       </div>
       <div className="sales-history-top-products-column">
-        <h3>Price</h3>
+        <p className="top-product-cart-title">Price</p>
         <h5>200</h5>
       </div>
       <div className="sales-history-top-products-column">
-        <h3>Today</h3>
+        <p className="top-product-cart-title">Today</p>
         <h5>200</h5>
       </div>
     </div>

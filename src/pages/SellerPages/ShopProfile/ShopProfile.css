@@ -34,3 +34,19 @@
   border-bottom: 1px solid;
   padding-bottom: 6%;
 }
+
+.shop-profile-edit-btn{
+  background-color: #ffc029;
+  border-radius: 16px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  position: absolute;
+  margin-left: 35%;
+  width: 159px;
+}
+
+.shop-profile-edit-btn:hover{
+  cursor: pointer;
+}

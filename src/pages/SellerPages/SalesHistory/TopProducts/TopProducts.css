@@ -25,8 +25,9 @@
   flex-direction: column;
 }
 
-.sales-history-top-products-column > h3 {
-  color: #7b7878;
+.top-product-cart-title{
+  font-size: medium;
+  font-weight: normal;
 }
 
 .sales-history-top-products-column > h5 {
