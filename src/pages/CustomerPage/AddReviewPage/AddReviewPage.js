@@ -8,13 +8,19 @@ import { AiOutlineCloudUpload } from "react-icons/ai";
 import Img_01 from "../../../assests/images/addreviewsamples/img_01.png";
 import Img_02 from "../../../assests/images/addreviewsamples/img_02.png";
 import Img_03 from "../../../assests/images/addreviewsamples/img_03.png";
+import {BiArrowBack} from "react-icons/bi";
+import {useNavigate} from "react-router-dom";
 const AddReviewPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="add-review-main-container">
+
       <div className="add-review-row ">
         <article>
+          <BiArrowBack className="back-arrow" size={30} style={{marginRight:"80%", marginBottom:"20%"}} onClick={() => navigate("/orders")}/>
+
           <img src={Img_01} className="add-review-main-img" />
-          <h3 className="add-review-item-title">Handmade Earings </h3>
+          <h3 className="add-review-item-title">Handmade Earrings </h3>
 
           <div className="add-review-price-row">
             <span>LKR 750.00</span>
@@ -40,7 +46,7 @@ const AddReviewPage = () => {
         </article>
         <article>
           <textarea
-            placeholder="Your Reveiw  Here....."
+            placeholder="Your Review  Here....."
             rows={8}
             className="add-review-area"
           />

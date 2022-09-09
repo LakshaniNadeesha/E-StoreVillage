@@ -1,11 +1,16 @@
 import React from "react";
 import "./editprofile.css";
 import Profile from "../../assests/images/profile-img.png";
+import {BiArrowBack} from "react-icons/bi";
+import {useNavigate} from "react-router-dom";
 const EditProfile = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="profile-main-container">
             <div className="profile-row-container">
                 <div className="profile-img-container">
+                    <BiArrowBack className="back-arrow" size={30} style={{marginRight:"80%"}} onClick={() => navigate("/profile")}/>
                     <h3 className="profile-name"> Sanduni Fernando</h3>
                     <img src={Profile} alt="" className="profile-img" />
                     <p className="change-profile-picture" style={{fontSize:"14px"}}>Change Profile Picture</p>
@@ -19,8 +24,8 @@ const EditProfile = () => {
                     <span className="edit-profile-span">E-mail</span>
                     <input type="email" className="input-text" placeholder="sandunifernando@gmail.com"/>
 
-                    <span className="edit-profile-span">Adddress</span>
-                    <textarea className="input-text" placeholder="No:256, Galle Road,colombo"/>
+                    <span className="edit-profile-span">Address</span>
+                    <textarea className="input-text" placeholder="No:256,Galle Road,colombo"/>
 
 
                     <span className="edit-profile-span">Contact No</span>

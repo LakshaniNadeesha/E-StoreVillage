@@ -35,7 +35,6 @@ const EventPage = () => {
       <div className="event-sub-container">
         <div className="event-give-away-row-container">
           <h3 className="event-title">Giveaways</h3>
-          <button className="add-give-away-btn">Add A Giveaway</button>
         </div>
 
         {giveawaylist.map((item, index) => (
