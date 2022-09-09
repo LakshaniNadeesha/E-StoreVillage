@@ -14,7 +14,9 @@ const SubNavbar = () => {
   const setHeader = () => {
     if(router.pathname.match(/manager_orders/)){
       return "Orders";
-    }else if(router.pathname.match(/add_to_cart/)){
+    }else if(router.pathname.match(/removeCartProduct/)){
+      return "Remove Cart Product";
+    } else if(router.pathname.match(/add_to_cart/)){
       return "Add To Cart";
     } else if(router.pathname.match(/buy_now/)){
       return "Buy Now";

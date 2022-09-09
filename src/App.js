@@ -51,6 +51,8 @@ import RemoveGiveaways from "./pages/SellerPages/SellerEvent/RemoveGiveaways";
 import CreateDiscount from "./pages/SellerPages/DiscountPage/CreateDiscount";
 import UpdateDiscount from "./pages/SellerPages/DiscountPage/UpdateDiscount";
 import RemoveDiscount from "./pages/SellerPages/DiscountPage/RemoveDiscount";
+import EditShopProfile from "./pages/SellerPages/ShopProfile/EdtiShopProfile";
+import RemoveCartProduct from "./pages/CustomerPage/MyCart/RemoveCartProduct";
 
 function App() {
     // const isLogin = false;
@@ -81,7 +83,7 @@ function App() {
             {true === check() ? <Navbar /> : <SubNavbar />}
 
             <div style={false === check() ? styles : null}>
-                {false === check() && <SellerSidebar/>}
+                {false === check() && <Sidebar/>}
 
                 <Routes>
                     {/* default pages */}
@@ -101,6 +103,7 @@ function App() {
                     <Route path="/profile" element={<ProfilePage />} />
                     <Route path="/profile/editprofile" element={<EditProfile/>} />
                     <Route path="/cart" element={<MyCart />} />
+                    <Route path="/cart/removeCartProduct" element={<RemoveCartProduct/>} />
                     <Route path="/orders" element={<MyOrders />} />
                     <Route path="/orders/addreview" element={<AddReviewPage />} />
 
@@ -124,6 +127,8 @@ function App() {
                     <Route path="/discounts/remove_discount" element={<RemoveDiscount/>}/>
                     <Route path="/salesHistory" element={<SalesHistory />} />
                     <Route path="/shopProfile" element={<ShopProfile />} />
+                    <Route path="/shopProfile/edit_shopProfile" element={<EditShopProfile/>} />
+
 
                     {/* Manager pages */}
                     <Route exact path="/manager_products" element={<ManagerProducts/>} />
