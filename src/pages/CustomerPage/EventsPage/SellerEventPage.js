@@ -20,10 +20,6 @@ const SellerEventPage = () => {
             <div className="event-offer-container">
                 <div className="category-container">
                     <div></div>
-                    <button className="category-btn">
-                        <p className="category-txt">Category</p>{" "}
-                        <RiArrowDropDownLine size={30} />
-                    </button>
                 </div>
                 <div className="event-offer-sub-container">
                     <h3 className="event-title">Offers</h3>
