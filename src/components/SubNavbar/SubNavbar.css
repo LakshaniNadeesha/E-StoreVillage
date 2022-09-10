@@ -93,3 +93,11 @@
   margin-top: 3%;
   object-fit: contain;
 }
+
+.help-icon:hover{
+  cursor: pointer;
+}
+
+.notification-icon:hover{
+  cursor: pointer;
+}

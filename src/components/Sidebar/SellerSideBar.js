@@ -5,7 +5,7 @@ import { VscSettingsGear, VscCalendar } from "react-icons/vsc";
 import {
     AiOutlineShoppingCart,
     AiOutlineUser,
-    AiFillShop,
+    AiFillShop, AiOutlineQuestionCircle,
 } from "react-icons/ai";
 import { BsPencilSquare } from "react-icons/bs";
 import { Link, useParams, useRoutes, useLocation } from "react-router-dom";
@@ -181,6 +181,28 @@ const SellerSidebar = () => {
             </span>
                     </div>
                 </Link>
+
+                <Link to="/help">
+                    <div className="row-container">
+                        <AiOutlineQuestionCircle
+                            size={25}
+                            color={
+                                route.pathname.match(/help/) !== null
+                                    ? iconSelectColor
+                                    : iconDefaultColor
+                            }
+                        />
+                        <span
+                            style={
+                                route.pathname.match(/help/) !== null
+                                    ? selectTxtStyle
+                                    : defaultTxtStyle
+                            }>
+              Help
+            </span>
+                    </div>
+                </Link>
+
 
             </section>
             <div style={{ width: "19vw" }}></div>

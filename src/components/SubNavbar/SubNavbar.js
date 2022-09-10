@@ -6,10 +6,11 @@ import { BiHelpCircle, BiMessage } from "react-icons/bi";
 import { MdNotificationsNone } from "react-icons/md";
 
 import "./SubNavbar.css";
-import { useLocation, useParams, useRoutes } from "react-router-dom";
+import {useLocation, useNavigate, useParams, useRoutes} from "react-router-dom";
 
 const SubNavbar = () => {
   const router = useLocation();
+  const navigate = useNavigate();
 
   const setHeader = () => {
     if(router.pathname.match(/manager_orders/)){
@@ -22,7 +23,9 @@ const SubNavbar = () => {
       return "Buy Now";
     }else if(router.pathname.match(/add_new_product/)){
       return "Add New Product";
-    }else if(router.pathname.match(/edit_giveaways/)){
+    }else if(router.pathname.match(/help/)){
+      return "Help";
+    } else if(router.pathname.match(/edit_giveaways/)){
       return "Update Giveaway";
     } else if(router.pathname.match(/add_giveaways/)){
       return "Add A Giveaway";
@@ -36,6 +39,18 @@ const SubNavbar = () => {
       return "Update Discount";
     }else if(router.pathname.match(/remove_discount/)){
       return "Remove Discount";
+    }else if(router.pathname.match(/add_category/)){
+      return "Add New Category";
+    }else if(router.pathname.match(/update_category/)){
+      return "Update Category";
+    }else if(router.pathname.match(/remove_category/)){
+      return "Remove Category";
+    } else if(router.pathname.match(/categories/)){
+      return "Manage Categories";
+    } else if(router.pathname.match(/manage_users/)){
+      return "Manage Users";
+    } else if(router.pathname.match(/system_report/)){
+      return "System Report";
     } else if(router.pathname.match(/complaints/)){
       return "Complaints";
     } else if (router.pathname.match(/managerProfile/)){
@@ -85,9 +100,9 @@ const SubNavbar = () => {
           </div>
 
           <div className="sub-nav-icon-row">
-            <BiHelpCircle size={22} />
-            <MdNotificationsNone size={22} />
-            <BiMessage size={22} />
+            <BiHelpCircle size={22} className="help-icon" onClick={() => navigate("/help")}/>
+            <MdNotificationsNone size={25} className="notification-icon"/>
+            {/*<BiMessage size={22} />*/}
           </div>
 
           <div className="sub-nav-user">
