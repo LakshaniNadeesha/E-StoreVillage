@@ -14,7 +14,7 @@ const ShopProfile = () => {
       <div className="shop-profile-sub-container">
         <div>
           <div className="give-away-logo-container">
-            <img src={Shop} className="shop-profile-img" />
+            <img src={Shop} className="shop-profile-img-edit" />
             <p className="shop-name give-away" style={{ width: "137%" }}>
               Glamour House
             </p>

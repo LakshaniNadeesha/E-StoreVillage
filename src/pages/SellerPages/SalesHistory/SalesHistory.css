@@ -59,3 +59,23 @@
 .chart-container > BarChart{
   color: #02334f;
 }
+
+.report-generate-btn > button{
+  flex-direction: row;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 83%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: #ffc029d4;
+  padding: 15px 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.report-generate-btn > button:hover{
+  cursor: pointer;
+  font-weight: bolder;
+}

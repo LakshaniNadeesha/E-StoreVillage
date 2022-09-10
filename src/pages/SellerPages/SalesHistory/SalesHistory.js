@@ -2,6 +2,7 @@ import React from "react";
 import "./SalesHistory.css";
 import TopProducts from "./TopProducts/TopProducts";
 import TotalCounts from "./TotalCounts/TotalCounts";
+import {GrDocumentDownload} from "react-icons/gr";
 import BarChart from "react-bar-chart";
 
 const SalesHistory = () => {
@@ -24,6 +25,10 @@ const SalesHistory = () => {
   const margin = { top: 20, right: 20, bottom: 30, left: 70 };
   return (
     <div className="sales-history-main-container">
+        <div className="report-generate-btn">
+            <button><GrDocumentDownload size={20}/>Generate Report</button>
+        </div>
+        <br/>
       <div className="chart-container">
         <BarChart
 

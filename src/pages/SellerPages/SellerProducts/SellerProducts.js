@@ -28,10 +28,6 @@ const SellerProducts = () => {
                         <MdOutlineMenu size={20} />
                     </div>
                 </div>
-                <button className="category-btn">
-                    <p className="category-txt">Category</p>
-                    <RiArrowDropDownLine size={30} />
-                </button>
             </div>
             <SellerProductList/>
         </div>

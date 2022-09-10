@@ -49,7 +49,13 @@ label {
     border-radius: 10px;
 }
 
-
+.seller-order-status-input-text{
+    padding: 12px 60px 12px 10px;
+    width: 80%;
+    border: 3px solid #ccc;
+    font-size: 15px;
+    border-radius: 10px;
+}
 
 .seller-edit-order-btn{
     margin-top: 10%;

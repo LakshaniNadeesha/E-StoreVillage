@@ -8,6 +8,14 @@
     gap: 60px;
 }
 
+.product-category{
+    padding: 12px 60px 12px 10px;
+    width: 20%;
+    border: 3px solid #ccc;
+    font-size: 15px;
+    border-radius: 40px;
+}
+
 .add-product-button > button{
     flex-direction: row;
     margin-top: 1%;

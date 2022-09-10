@@ -39,7 +39,12 @@ const SellerOrderEdit = () => {
                         <div className="edit-order-full">
                             <div className="edit-order-left">
                                 <label>Status</label>
-                                <input type="text" className="edit-order-input-text" placeholder="Delivered"/>
+                                <select className="seller-order-status-input-text">
+                                    <option value="pending" style={{color:"#656464"}}>Pending</option>
+                                    <option value="delivered" style={{color:"#656464"}}>Delivered</option>
+                                    <option value="canceled" style={{color:"#656464"}}>Canceled</option>
+                                </select>
+
                             </div>
                             <div className="edit-order-right">
                                 <label>Customer</label>
