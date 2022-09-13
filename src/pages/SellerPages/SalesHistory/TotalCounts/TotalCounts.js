@@ -6,13 +6,7 @@ import { IoBagOutline } from "react-icons/io5";
 const TotalCounts = () => {
   return (
     <div className="sales-history-totals">
-      <div>
-        <BiUser color="FFB402" size={25} />
-        <div>
-          <p>Total Visits</p>
-          <h3>2k</h3>
-        </div>
-      </div>
+
       <div>
         <IoBagOutline color="5F27CD" size={25} />
         <div>

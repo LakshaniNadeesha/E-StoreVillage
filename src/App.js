@@ -53,6 +53,14 @@ import UpdateDiscount from "./pages/SellerPages/DiscountPage/UpdateDiscount";
 import RemoveDiscount from "./pages/SellerPages/DiscountPage/RemoveDiscount";
 import EditShopProfile from "./pages/SellerPages/ShopProfile/EdtiShopProfile";
 import RemoveCartProduct from "./pages/CustomerPage/MyCart/RemoveCartProduct";
+import HelpPage from "./pages/HelpPage/HelpPage";
+import AdminSideBar from "./components/Sidebar/AdminSideBar";
+import ManageCategory from "./pages/AdminPages/ManageCategory/ManageCategory";
+import AddNewCategory from "./pages/AdminPages/ManageCategory/AddNewCategory";
+import UpdateCategory from "./pages/AdminPages/ManageCategory/UpdateCategory";
+import RemoveCategory from "./pages/AdminPages/ManageCategory/RemoveCategory";
+import ManageUser from "./pages/AdminPages/ManageUsers/ManageUser";
+import SystemReport from "./pages/AdminPages/SystemReport/SystemReport";
 
 function App() {
     // const isLogin = false;
@@ -83,7 +91,7 @@ function App() {
             {true === check() ? <Navbar /> : <SubNavbar />}
 
             <div style={false === check() ? styles : null}>
-                {false === check() && <Sidebar/>}
+                {false === check() && <AdminSideBar/>}
 
                 <Routes>
                     {/* default pages */}
@@ -106,6 +114,7 @@ function App() {
                     <Route path="/cart/removeCartProduct" element={<RemoveCartProduct/>} />
                     <Route path="/orders" element={<MyOrders />} />
                     <Route path="/orders/addreview" element={<AddReviewPage />} />
+                    <Route path="/help" element={<HelpPage/>} />
 
                     {/* seller pages */}
                     <Route exact path="/myshop" element={<MyShop />} />
@@ -150,6 +159,12 @@ function App() {
 
 
                     {/*Admin pages */}
+                    <Route exact path="/categories" element={<ManageCategory/>} />
+                    <Route exact path="/categories/add_category" element={<AddNewCategory/>} />
+                    <Route exact path="/categories/update_category" element={<UpdateCategory/>} />
+                    <Route exact path="/categories/remove_category" element={<RemoveCategory/>} />
+                    <Route exact path="/manage_users" element={<ManageUser/>} />
+                    <Route exact path="/system_report" element={<SystemReport/>} />
 
 
                 </Routes>
