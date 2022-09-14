@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../SellerPages/SalesHistory/TotalCounts/TotalCounts.css";
+import "./TotalSales.css";
 import { BiUser } from "react-icons/bi";
 import { BsFillPrinterFill } from "react-icons/bs";
 import { IoBagOutline } from "react-icons/io5";

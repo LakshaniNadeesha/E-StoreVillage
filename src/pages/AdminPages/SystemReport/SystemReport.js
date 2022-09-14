@@ -6,9 +6,11 @@ import { PieChart } from 'react-minimal-pie-chart';
 import TotalTopProducts from "./TotalTopProducts/TotalTopProducts";
 
 const SystemReport = () => {
-    const topSellingProduct = [{}, {}];
+    const topSellingProduct = [{}, {},{}];
 
-    const REVENUE = [
+    const Label = ["cat","dog","bird"];
+
+    const TotalRevenue = [
         { text: "Jan", value: 200 },
         { text: "Feb", value: 400 },
         { text: "Mar", value: 500 },
@@ -39,7 +41,7 @@ const SystemReport = () => {
                     width={1050}
                     height={500}
                     margin={margin}
-                    data={REVENUE}
+                    data={TotalRevenue}
                 />
             </div>
 
@@ -53,11 +55,22 @@ const SystemReport = () => {
                 <div className="total-sales-analytics">
                     <h3 className="total-sales-analytic-title">Analytics</h3>
                     <PieChart
+                        style={{
+                            height: "280px",
+                            marginTop:"8%"
+                        }}
                         data={[
-                            { title: 'One', value: 10, color: '#E38627' },
-                            { title: 'Two', value: 15, color: '#C13C37' },
-                            { title: 'Three', value: 20, color: '#6A2135' },
+                            { title: 'one',label:"yes", value: 10, color: '#E38627' },
+                            { title: 'Two', label:"no", value: 15, color: '#C13C37' },
+                            { title: 'Three', label:"yes-no", value: 20, color: '#6A2135' },
                         ]}
+                        labelPosition={50}
+                        lengthAngle={360}
+                        lineWidth={35}
+                        paddingAngle={0}
+                        radius={50}
+                        startAngle={0}
+                        viewBoxSize={[100, 100]}
                     />;
                 </div>
             </div>

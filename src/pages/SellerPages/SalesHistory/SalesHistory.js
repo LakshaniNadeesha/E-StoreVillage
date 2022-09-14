@@ -41,7 +41,7 @@ const SalesHistory = () => {
         />
       </div>
 
-      <TotalCounts />
+      <TotalCounts/>
 
       <h3 className="sales-history-title">Top Products</h3>
 

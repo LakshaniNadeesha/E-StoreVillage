@@ -1,16 +1,16 @@
-.sales-history-main-container {
+.admin-total-sales-main-container {
     padding: 2%;
     width: 100%;
 }
 
-.sales-history-totals {
+.sales-history-report-totals {
     flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.sales-history-totals > div {
+.sales-history-report-totals > div {
     flex-direction: row;
     background-color: white;
     padding: 2% 1%;
@@ -20,6 +20,6 @@
     width: 20%;
 }
 
-.sales-history-totals > div > div > h3 {
+.sales-history-report-totals > div > div > h3 {
     margin-top: 5px;
 }

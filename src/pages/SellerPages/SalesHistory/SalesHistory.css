@@ -1,3 +1,19 @@
+.sales-history-main-container {
+  padding: 2%;
+  width: 100%;
+}
+
+.sales-history-title {
+  margin-top: 3%;
+}
+
+.sales-history-stat-container {
+  background-color: white;
+  border-radius: 20px;
+  width: 40%;
+  margin-top: 2%;
+  padding: 3%;
+}
 
 .sales-history-progress-container {
   width: 100%;
