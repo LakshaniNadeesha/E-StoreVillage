@@ -1,17 +1,17 @@
 import React from "react";
-import "./PromotionAcceptReject.css";
+import "./RegistrationAcceptReject.css";
 import {useNavigate} from "react-router-dom";
 
-const PromotionRequestReject = () => {
+const RegistrationRequestReject = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="pro-accept-main-container">
-            <div className="pro-accept-row-container">
-                <p className="verify-p">Are you sure you want to accept the promotion request?</p>
-                <div className="pro-manager-request-respond-option">
-                    <button className="pro-manager-reject">Reject</button>
-                    <button className="pro-manager-cancel" onClick={() => navigate("/promotion_request")}>Cancel</button>
+        <div className="reg-request-reject-main-container">
+            <div className="reg-request-reject-row-container">
+                <p className="reg-reject-verify-p">Are you sure you want to reject this seller registration request?</p>
+                <div className="reg-request-respond-option">
+                    <button className="reg-request-manager-reject">Reject</button>
+                    <button className="reg-request-manager-cancel" onClick={() => navigate("/registration_request")}>Cancel</button>
                 </div>
 
             </div>
@@ -19,4 +19,4 @@ const PromotionRequestReject = () => {
     );
 };
 
-export default PromotionRequestReject;
+export default RegistrationRequestReject;

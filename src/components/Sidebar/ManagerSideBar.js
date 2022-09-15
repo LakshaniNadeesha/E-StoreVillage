@@ -136,23 +136,23 @@ const ManagerSidebar = () => {
                     </div>
                 </Link>
 
-                <Link to="/promotion_request">
+                <Link to="/registration_request">
                     <div className="row-container">
                         <VscRequestChanges
                             size={25}
                             color={
-                                route.pathname.match(/promotion_request/) !== null
+                                route.pathname.match(/registration_request/) !== null
                                     ? iconSelectColor
                                     : iconDefaultColor
                             }
                         />
                         <span
                             style={
-                                route.pathname.match(/promotion_request/) !== null
+                                route.pathname.match(/registration_request/) !== null
                                     ? selectTxtStyle
                                     : defaultTxtStyle
                             }>
-              Promotions
+              Registration
             </span>
                     </div>
                 </Link>

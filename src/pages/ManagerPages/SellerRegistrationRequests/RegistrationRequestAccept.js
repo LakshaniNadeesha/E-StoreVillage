@@ -1,17 +1,58 @@
 import React from "react";
-import "./PromotionAcceptReject.css";
+import "./RegistrationAcceptReject.css";
 import {useNavigate} from "react-router-dom";
 
-const PromotionRequestAccept = () => {
+const RegistrationRequestAccept = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="pro-accept-main-container">
-            <div className="pro-accept-row-container">
-                <p className="verify-p">Are you sure you want to accept the promotion request?</p>
-                <div className="pro-manager-request-respond-option">
-                <button className="pro-manager-accept">Accept</button>
-                <button className="pro-manager-cancel" onClick={() => navigate("/promotion_request")}>Cancel</button>
+        <div className="reg-request-reject-main-container">
+            <div className="reg-request-accept-row-container">
+               <div className="reg-request-full">
+                   <div className="reg-request-left">
+                       Shop Name
+                   </div>
+                   <div className="reg-request-right">
+                       : Glamour House
+                   </div>
+               </div>
+                <div className="reg-request-full">
+                    <div className="reg-request-left">
+                        Email
+                    </div>
+                    <div className="reg-request-right">
+                        : glamourhouse@gmail.com
+                    </div>
+                </div>
+                <div className="reg-request-full">
+                    <div className="reg-request-left">
+                        No of followers
+                    </div>
+                    <div className="reg-request-right">
+                        : 25k
+                    </div>
+                </div>
+                <div className="reg-request-full">
+                    <div className="reg-request-left">
+                        Social media link
+                    </div>
+                    <div className="reg-request-right">
+                        : https://facebook.com/glamourhouse
+                    </div>
+                </div>
+                <div className="reg-request-full">
+                    <div className="reg-request-left">
+                        Contact No
+                    </div>
+                    <div className="reg-request-right">
+                        : 076-9632145
+                    </div>
+                </div>
+
+
+                <div className="reg-request-accept-respond-option">
+                <button className="reg-request-manager-accept">Accept</button>
+                <button className="reg-request-manager-accept-cancel" onClick={() => navigate("/registration_request")}>Cancel</button>
                 </div>
 
             </div>
@@ -19,4 +60,4 @@ const PromotionRequestAccept = () => {
     );
 };
 
-export default PromotionRequestAccept;
+export default RegistrationRequestAccept;
