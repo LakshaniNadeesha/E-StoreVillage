@@ -28,11 +28,11 @@ import ManagerSideBar from "./components/Sidebar/ManagerSideBar";
 import ManagerEvent from "./pages/ManagerPages/ManagerEvents/ManagerEvent";
 import ManagerOrder from "./pages/ManagerPages/ManagerOrders/ManagerOrder";
 import ManageComplaints from "./pages/ManagerPages/ManageComplaints/ManageComplaints";
-import PromotionRequest from "./pages/ManagerPages/PromotionRequest/PromotionRequest";
+import PromotionRequest from "./pages/ManagerPages/SellerRegistrationRequests/RegistrationRequest";
 import ManagerProfile from "./pages/ManagerPages/ManagerProfile/ManagerProfile";
 import ManagerEditProfile from "./pages/ManagerPages/ManagerProfile/ManagerEditProfile";
-import PromotionRequestAccept from "./pages/ManagerPages/PromotionRequest/PromotionRequestAccept";
-import PromotionRequestReject from "./pages/ManagerPages/PromotionRequest/PromotionRequestReject";
+import RegistrationRequestAccept from "./pages/ManagerPages/SellerRegistrationRequests/RegistrationRequestAccept";
+import RegistrationRequestReject from "./pages/ManagerPages/SellerRegistrationRequests/RegistrationRequestReject";
 import ComplaintsRespond from "./pages/ManagerPages/ManageComplaints/ComplaintsRespond";
 import ManagerEventRemove from "./pages/ManagerPages/ManagerEvents/ManagerEventRemove";
 import ManagerEventEdit from "./pages/ManagerPages/ManagerEvents/ManagerEventEdit";
@@ -91,7 +91,7 @@ function App() {
             {true === check() ? <Navbar /> : <SubNavbar />}
 
             <div style={false === check() ? styles : null}>
-                {false === check() && <AdminSideBar/>}
+                {false === check() && <ManagerSideBar/>}
 
                 <Routes>
                     {/* default pages */}
@@ -150,9 +150,9 @@ function App() {
                     <Route path="/manager_orders" element={<ManagerOrder/>} />
                     <Route path="/complaints" element={<ManageComplaints/>}/>
                     <Route path="/complaints/repond" element={<ComplaintsRespond/>}/>
-                    <Route path="/promotion_request" element={<PromotionRequest/>}/>
-                    <Route path="/promotion_request/accept" element={<PromotionRequestAccept/>}/>
-                    <Route path="/promotion_request/reject" element={<PromotionRequestReject/>}/>
+                    <Route path="/registration_request" element={<PromotionRequest/>}/>
+                    <Route path="/registration_request/accept" element={<RegistrationRequestAccept/>}/>
+                    <Route path="/registration_request/reject" element={<RegistrationRequestReject/>}/>
                     <Route path="/managerProfile" element={<ManagerProfile/>}/>
                     <Route path="/managerProfile/managereditprofile" element={<ManagerEditProfile/>}/>
 

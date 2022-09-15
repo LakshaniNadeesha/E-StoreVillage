@@ -55,8 +55,8 @@ const SubNavbar = () => {
       return "Complaints";
     } else if (router.pathname.match(/managerProfile/)){
       return "Profile";
-    } else if(router.pathname.match(/promotion_request/)){
-      return "Promotion Requests";
+    } else if(router.pathname.match(/registration_request/)){
+      return "Seller Registration Requests";
     } else if(router.pathname.match(/edit_order/)){
       return "Edit Order Details";
     } else if(router.pathname.match(/remove_order/)){
